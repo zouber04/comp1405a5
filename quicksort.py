@@ -1,7 +1,21 @@
+#########################
+# Author: Zouber Ismail
+# Assignment 5
+# Date july 11 2022
+#########################
+
+
 import math
 
 
 def distance(arr_point):
+    """
+    Calculates euclidean distance
+    Args: 
+        -array, point
+    Returns: int, euclidean distance
+
+    """
     
     calculated_val = math.sqrt(arr_point[0]**2 + arr_point[1]**2)
             
@@ -10,6 +24,13 @@ def distance(arr_point):
 
 
 def quicksort(sequence):
+    """
+    Sort array of points based off euclidean distance from ascending order
+    Args: 
+        -array, unsorted points
+    Returns: array, Sorted points
+
+    """
     length = len(sequence)
     
     if length <= 1:
@@ -31,5 +52,4 @@ def quicksort(sequence):
 
 
 if __name__ == "__main__":
-    arr = [[10,1],[4,5],[5,6],[8,9]]
-    print(quicksort(arr))
+    
