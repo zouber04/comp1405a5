@@ -6,7 +6,7 @@
 
 def countingSort(arr):
     """
-    Sorting list of number in asceding order
+    Sorting list of number in ascending order
     Args: 
         -int array, numbers
     Returns: int array, sorted numbers
@@ -14,10 +14,12 @@ def countingSort(arr):
     """
     
     size = len(arr)
+    
     output = [0] * size
-
+    max_val = Math.max(arr)
+    max_index = arr.indexOf(max_val)
     # count array initialization
-    count = [0]*(size+3)
+    count = [0]*(max_index)
 
     # storing the count of each element 
     for m in range(0, size):
